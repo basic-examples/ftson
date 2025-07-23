@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "name": "@this-project/test",
+  "scripts": {
+    "start": "tsx src < data/input.jsonl | diff - data/output.txt"
+  },
+  "dependencies": {
+    "@ftson/escape": "file:../dist"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}

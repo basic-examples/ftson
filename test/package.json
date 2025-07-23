@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "name": "@this-project/test",
+  "scripts": {
+    "start": "npm install && ftson"
+  },
+  "dependencies": {
+    "@ftson/escape": "^0.0.0",
+    "ftson": "file:../dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}

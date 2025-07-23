@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "name": "ftson",
+  "version": "0.0.0",
+  "description": "Fast JSON powered by TypeScript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/basic-examples/ftson.git"
+  },
+  "bin": {
+    "ftson": "./bin.js"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf dist && tsc && clean-empty-js 'dist/**/*.js' 'dist/**/*.d.ts' && clean-empty-directory dist && cpy README.md dist && package-json-minifier",
+    "publish": "npm run build && cd dist && npm publish",
+    "test": "cd test && npm start"
+  },
+  "dependencies": {
+    "args-typed": "^0.0.3",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.15",
+    "clean-empty-directory": "^2.0.0",
+    "clean-empty-js": "^2.0.1",
+    "cpy-cli": "^5.0.0",
+    "package.json-minifier": "^0.0.4",
+    "rimraf": "^6.0.1"
+  }
+}
