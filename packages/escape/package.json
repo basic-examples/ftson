@@ -5,7 +5,8 @@
   "description": "String escape library for `ftson`",
   "repository": {
     "type": "git",
-    "url": "https://github.com/basic-examples/ftson.git"
+    "url": "https://github.com/basic-examples/ftson.git",
+    "directory": "packages/escape"
   },
   "license": "MIT",
   "scripts": {
